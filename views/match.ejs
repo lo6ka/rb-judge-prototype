@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Match Page - Game prototype</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="backgound--blue">
+    <div data-id="app" class="wrapper">
+        <div data-id="leader" class="leader"><%= leader.name %></div>
+        <div data-id="match" class="countdown">
+            <div data-id="countdown">
+                <button data-id="startCountdown">Start Match!</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/socket.io.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

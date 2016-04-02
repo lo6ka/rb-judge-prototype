@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Page - Game prototype</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="result">
+      <p>Player 1 <%= player1.name %> - <%= player1.busts %></p>
+      <p>Player 2 <%= player2.name %> - <%= player2.busts %></p>
+    </div>
+  </div>
+
+<script src="js/socket.io.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

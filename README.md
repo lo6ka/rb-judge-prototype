@@ -1,1 +1,1 @@
-# rb-judge-prototype
+# the-game-prototype

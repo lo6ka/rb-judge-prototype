@@ -1,0 +1,164 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    background: #ffc520;
+    font-size: 2.2rem;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.backgound--blue{
+    background: #4a90e2;
+    color: #ffffff;
+}
+
+.background--white{
+    background: #ffffff;
+    color: #4d4d4d;
+}
+
+.background--blink{
+    -webkit-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%{
+        background: #7ED321;
+    }
+    66%{
+        background: #4a90e2;
+    }
+    100%{
+        background: #7ED321;
+    }
+}
+
+.new-match-form{
+}
+
+input[type="text"]{
+    display: block;
+    padding: 20px;
+    border: 2px solid #979797;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.player-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.player-control p{
+    text-align: center;
+}
+
+.start-btn{
+    display: block;
+    padding: 20px;
+    background: #4a90e2;
+    color: #ffffff;
+    border: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.wrapper {
+    display: flex;
+    transition: background-color 0.5s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #333;
+    color: #fff;
+}
+
+button {
+    display: block;
+    margin-bottom: 2vh;
+    height: 10vh;
+    font-size: 5vh;
+    width: 100%;
+    color: #4d4d4d;
+}
+
+.players {
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-columns: 2 40vw;
+    -moz-columns: 2 40vw;
+    columns: 4 40vw;
+}
+
+.players > div {
+    box-sizing: border-box;
+    padding: 5vw;
+}
+
+.hidden{
+    display: none;
+}
+
+.green {
+    background: #7ED321;
+}
+
+.blue {
+    background: #4a90e2;
+}
+
+.result {
+    padding: 2vh 2vw;
+}
+
+.leader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2vh 2vw;
+}
+
+.leader::before {
+    content: 'Leader:';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.countdown {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40vw;
+}
+
+.flexplayers > div {
+    margin: 0 2vw;
+}
+.flexplayers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: space-between;
+    /* flex-end; */
+}
+
+.flexbutton {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}

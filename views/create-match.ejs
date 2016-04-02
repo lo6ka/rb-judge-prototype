@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Match - Game prototype</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="background--white">
+    <form class="new-match-form" action="/create-match" method="post">
+        <div class="flexplayers">
+            <div>
+                <p>Player 1</p>
+                <input type="text" name="player1" id="player1" required>
+            </div>
+            <div>
+                <p>Player 2</p>
+                <input type="text" name="player2" id="player2" required>
+            </div>
+        </div>
+
+        <div class="flexbutton">
+            <input class="start-btn" type="submit" value="Start Match">
+        </div>
+    </form>
+</body>
+</html>
